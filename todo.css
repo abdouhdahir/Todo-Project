@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #B2C7A4;
+    margin-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 80px;
+
+}
+.input{
+    background: #fff;
+}
+form input ,
+form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+}
+form button{
+    color: #dd9b45;
+    background: #fff;
+    cursor: pointer;
+}
+form{ 
+    display: flex;
+    gap: 50px;
+}
+
+select{
+    width: 90px;
+    border: none;
+}
+form button:hover{
+    background: #dd9b45;
+    color: #fff;
+}

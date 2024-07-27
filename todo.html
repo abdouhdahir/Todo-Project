@@ -4,6 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="todo.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Abdourahman Todo</h1>
+    </header>
+
+    <form>
+      <div class="input">
+        <input type="text" />
+        <button type="submit"><i class="fa-solid fa-square-plus"></i></button>
+      </div>
+      <select>
+        <option value="0" selected disabled hidden>Filter</option>
+        <option value="">All</option>
+        <option value="">completed</option>
+        <option value="">uncompleted</option>
+      </select>
+    </form>
+    <div>
+      <ul></ul>
+    </div>
+  </body>
 </html>
