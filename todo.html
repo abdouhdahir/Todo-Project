@@ -19,19 +19,24 @@
     </header>
 
     <form>
-      <div class="input">
-        <input type="text" />
-        <button type="submit"><i class="fa-solid fa-square-plus"></i></button>
+      <div class="todoInput">
+        <input type="text" class="todoChamp" />
+        <button type="submit" class="todoAdd">
+          <i class="fa-solid fa-square-plus"></i>
+        </button>
       </div>
-      <select>
-        <option value="0" selected disabled hidden>Filter</option>
-        <option value="">All</option>
-        <option value="">completed</option>
-        <option value="">uncompleted</option>
-      </select>
+      <div class="select">
+        <select class="selectTodo">
+          <option value="0" selected disabled hidden>Filter</option>
+          <option value="all">All</option>
+          <option value="completed">completed</option>
+          <option value="uncompleted">uncompleted</option>
+        </select>
+      </div>
     </form>
-    <div>
-      <ul></ul>
+    <div class="todo-content">
+      <ul class="todo-items"></ul>
     </div>
+    <script src="todo.js"></script>
   </body>
 </html>

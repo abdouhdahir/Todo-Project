@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #B2C7A4;
+    /* background-color: #B2C7A4; */
+    background: linear-gradient(to right, #757fd8, #B2C7A4);
     margin-top: 100px;
     min-height: 100vh;
     display: flex;
@@ -17,7 +18,7 @@ header{
     padding-bottom: 80px;
 
 }
-.input{
+.todoInput{
     background: #fff;
 }
 form input ,
@@ -29,19 +30,97 @@ form button{
 }
 form button{
     color: #dd9b45;
-    background: #fff;
     cursor: pointer;
 }
+
 form{ 
     display: flex;
+    align-items: center;
     gap: 50px;
+    padding-bottom: 40px;
 }
 
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
 select{
-    width: 90px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
     border: none;
+}
+select{
+    color: #dd9b45;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background-color: #dd9b45;
+    color: #fff;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    
 }
 form button:hover{
     background: #dd9b45;
     color: #fff;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.newDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    width: 653px;
+}
+.newLi{
+    list-style: none;
+    flex: 1;
+    padding-right: 90px;
+}
+.bttCheck,
+.bttTrash{
+    background-color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.bttCheck{
+    background-color: rgb(73, 204, 73);
+    color: #fff;
+}
+.bttTrash{
+    background: #dd9b45;
+    color: #fff;
+
+}
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ('20deg');
+    opacity: 0;
 }
